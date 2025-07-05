@@ -11,8 +11,8 @@ export function AppointmentBookingScreen({ onNavigate }) {
 
     const availableProfessionals = [
         { id: 'dr-joao', name: 'Dr. João Silva (Clínico Geral)' },
-        { id: 'dra-ana', name: 'Dra. Ana Costa (Cardiologia)' },
-        { id: 'dr-pedro', name: 'Dr. Pedro Santos (Pediatria)' },
+        { id: 'dra-ana', name: 'Dra. Ana Luiza (Cardiologia)' },
+        { id: 'dr-pedro', name: 'Dr. Pedro Santana (Pediatria)' },
     ];
 
     const handleBooking = (e) => {

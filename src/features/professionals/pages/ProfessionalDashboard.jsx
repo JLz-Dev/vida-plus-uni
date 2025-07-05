@@ -2,10 +2,10 @@ import { Button } from "../../../components/common"
 
 export function ProfessionalDashboard({ onNavigate }) {
     const todayAppointments = [
-        { id: 1, time: '09:00', patient: 'Maria Souza', type: 'Consulta', status: 'Confirmado' },
-        { id: 2, time: '11:00', patient: 'Carlos Lima', type: 'Retorno', status: 'Aguardando' },
+        { id: 1, time: '09:00', patient: 'Bianca Silva', type: 'Consulta', status: 'Confirmado' },
+        { id: 2, time: '11:00', patient: 'Caio Motta', type: 'Retorno', status: 'Aguardando' },
     ];
-    const waitingPatients = ['Ana Pereira', 'Roberto Gomes'];
+    const waitingPatients = ['Ana Cristina', 'João Carlos'];
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

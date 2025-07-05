@@ -2,11 +2,12 @@ import { useState } from "react";
 import { Modal, Button, InputField } from "../../../components/common"
 
 export function ProfessionalScheduleScreen() {
-    const [selectedDate, setSelectedDate] = useState(new Date().toISOString().split('T')[0]);
+    const today = new Date().toISOString().split('T')[0];
+    const [selectedDate, setSelectedDate] = useState(today);
     const [appointments, setAppointments] = useState([
-        { id: 1, date: '2025-06-28', time: '09:00', patient: 'João da Silva', type: 'Consulta', status: 'Confirmado' },
-        { id: 2, date: '2025-06-28', time: '10:00', patient: 'Maria Oliveira', type: 'Retorno', status: 'Aguardando' },
-        { id: 3, date: '2025-06-29', time: '14:00', patient: 'Ana Paula', type: 'Consulta', status: 'Agendado' },
+        { id: 1, date: today, time: '09:00', patient: 'João da Silva', type: 'Consulta', status: 'Confirmado' },
+        { id: 2, date: today, time: '10:00', patient: 'Maria Oliveira', type: 'Retorno', status: 'Aguardando' },
+        { id: 3, date: today, time: '14:00', patient: 'Ana Paula', type: 'Consulta', status: 'Agendado' },
     ]);
     const [isIndisponibilityModalOpen, setIsIndisponibilityModalOpen] = useState(false);
     const [indisponibilityReason, setIndisponibilityReason] = useState('');

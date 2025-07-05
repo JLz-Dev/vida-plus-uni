@@ -2,8 +2,8 @@ import { Button } from "../common/Button"
 export function DashboardLayout({ userRole, onLogout, onNavigate, children }) {
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col">
-            <header className="bg-emerald-700 text-white p-4 shadow-md flex justify-between items-center">
-                <h1 className="text-2xl font-bold">VidaPlus+</h1>
+            <header className="bg-emerald-500 text-white p-4 shadow-md flex justify-between items-center">
+                <h1 className="text-2xl font-bold">VidaPlus</h1>
                 <nav className="hidden md:flex space-x-4">
                     {userRole === 'paciente' && (
                         <>

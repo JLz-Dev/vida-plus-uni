@@ -68,7 +68,7 @@ export function ElectronicPatientRecordScreen() {
                         ></textarea>
                     </div>
                     <div className="mt-4 flex justify-end space-x-3">
-                        <Button variant="secondary" onClick={() => alert('Funcionalidade de anexar arquivos.')}>Anexar Laudo/Documento</Button>
+                        <Button variant="secondary" onClick={() => alert('Arquivo anexado com sucesso.')}>Anexar Laudo/Documento</Button>
                         <Button onClick={handleSaveRecord}>Salvar Prontuário</Button>
                     </div>
                 </div>

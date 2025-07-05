@@ -1,6 +1,6 @@
 export function PatientMedicalHistoryScreen() {
     const patientData = {
-        name: 'Paciente Exemplo Silva',
+        name: 'Paciente: José Silva',
         cpf: '123.456.789-00',
         dob: '01/01/1990',
     };
@@ -12,7 +12,7 @@ export function PatientMedicalHistoryScreen() {
             type: 'Consulta',
             professional: 'Dr. João Silva (Clínico Geral)',
             details: 'Paciente relatou dores de cabeça leves. Exame físico sem alterações significativas. Prescrição de analgésico.',
-            attachments: [{ name: 'Receita_Paracetamol.pdf', url: '#' }],
+            attachments: [{ name: 'Receita_Paracetamol.pdf' }],
         },
         {
             id: 2,
@@ -20,15 +20,15 @@ export function PatientMedicalHistoryScreen() {
             type: 'Exame',
             professional: 'Laboratório Central',
             details: 'Exame de sangue completo. Resultados dentro da normalidade.',
-            attachments: [{ name: 'Laudo_Exame_Sangue.pdf', url: '#' }],
+            attachments: [{ name: 'Laudo_Exame_Sangue.pdf' }],
         },
         {
             id: 3,
             date: '10/03/2025',
             type: 'Internação',
-            professional: 'Dr. Pedro Santos (Pediatria)', // Exemplo de histórico mais antigo
+            professional: 'Dr. Pedro Santana (Pediatria)', // Exemplo de histórico mais antigo
             details: 'Internação por pneumonia leve. Alta após 3 dias de tratamento com antibióticos.',
-            attachments: [{ name: 'Relatorio_Alta_Hospitalar.pdf', url: '#' }],
+            attachments: [{ name: 'Relatorio_Alta_Hospitalar.pdf' }],
         },
     ];
 

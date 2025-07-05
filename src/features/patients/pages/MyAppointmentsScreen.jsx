@@ -5,7 +5,7 @@ export function MyAppointmentsScreen({ onNavigate }) {
     const [appointments, setAppointments] = useState([
         { id: 1, date: '28/06/2025', time: '10:00', doctor: 'Dr. João Silva', speciality: 'Clínico Geral', type: 'Presencial', status: 'Agendado' },
         { id: 2, date: '05/07/2025', time: '14:30', doctor: 'Dra. Ana Costa', speciality: 'Cardiologia', type: 'Telemedicina', status: 'Agendado' },
-        { id: 3, date: '15/05/2025', time: '09:00', doctor: 'Dr. Pedro Santos', speciality: 'Pediatria', type: 'Presencial', status: 'Realizado' },
+        { id: 3, date: '15/05/2025', time: '09:00', doctor: 'Dr. Pedro Santana', speciality: 'Pediatria', type: 'Presencial', status: 'Realizado' },
     ]);
     const [isCancelModalOpen, setIsCancelModalOpen] = useState(false);
     const [selectedAppointment, setSelectedAppointment] = useState(null);

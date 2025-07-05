@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Modal, Button, InputField } from "../../../components/common"
 export function UserManagementScreen() {
     const [users, setUsers] = useState([
-        { id: 1, name: 'Paciente A', email: 'pacientea@sghss.com', role: 'Paciente', status: 'Ativo' },
-        { id: 2, name: 'Dr. João Silva', email: 'joao.s@sghss.com', role: 'Profissional', status: 'Ativo' },
-        { id: 3, name: 'Admin Geral', email: 'admin@sghss.com', role: 'Administrador', status: 'Ativo' },
-        { id: 4, name: 'Paciente Inativo', email: 'inativo@sghss.com', role: 'Paciente', status: 'Inativo' },
+        { id: 1, name: 'Paciente A', email: 'pacientea@vidaplus.com', role: 'Paciente', status: 'Ativo' },
+        { id: 2, name: 'Dr. José Silva', email: 'jose.s@vidaplus.com', role: 'Profissional', status: 'Ativo' },
+        { id: 3, name: 'Admin Geral', email: 'admin@vidaplus.com', role: 'Administrador', status: 'Ativo' },
+        { id: 4, name: 'Paciente Inativo', email: 'inativo@vidaplus.com', role: 'Paciente', status: 'Inativo' },
     ]);
     const [searchTerm, setSearchTerm] = useState('');
     const [filterRole, setFilterRole] = useState('');
@@ -66,7 +66,7 @@ export function UserManagementScreen() {
                         <option value="Administrador">Administrador</option>
                     </select>
                 </div>
-                <Button onClick={() => alert('Abrir modal para adicionar novo usuário.')} className="ml-auto">Adicionar Novo Usuário</Button>
+                <Button onClick={() => alert('Usuário cadastrado com sucesso.')} className="ml-auto">Adicionar Novo Usuário</Button>
             </div>
 
             {filteredUsers.length > 0 ? (

@@ -9,11 +9,11 @@ export function LoginScreen({ onLogin, onNavigate }) {
         e.preventDefault();
         setError('');
         // Simulação de autenticação
-        if (email === 'paciente@sghss.com' && password === '123') {
+        if (email === 'paciente@vidaplus.com' && password === '123') {
             onLogin('paciente');
-        } else if (email === 'profissional@sghss.com' && password === '123') {
+        } else if (email === 'profissional@vidaplus.com' && password === '123') {
             onLogin('profissional');
-        } else if (email === 'admin@sghss.com' && password === '123') {
+        } else if (email === 'admin@vidaplus.com' && password === '123') {
             onLogin('administrador');
         } else {
             setError('Credenciais inválidas. Tente novamente.');
@@ -23,7 +23,7 @@ export function LoginScreen({ onLogin, onNavigate }) {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
             <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
-                <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Login no SGHSS</h2>
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Login Vida Plus </h2>
                 <form onSubmit={handleLogin}>
                     {error && <p className="text-red-600 text-center mb-4" role="alert">{error}</p>}
                     <InputField
