@@ -7,8 +7,8 @@ export function ElectronicPatientRecordScreen() {
     const [recordContent, setRecordContent] = useState('');
 
     const patients = [
-        { id: 1, name: 'Paciente A', cpf: '111.111.111-11', dob: '10/10/1985', records: [{ date: '2025-06-20', notes: 'Consulta de rotina. Sem queixas. PA: 120/80.' }] },
-        { id: 2, name: 'Paciente B', cpf: '222.222.222-22', dob: '05/03/1992', records: [{ date: '2025-06-15', notes: 'Queixa de dor de garganta. Prescrito antibiótico.' }] },
+        { id: 1, name: 'Patricia Santos', cpf: '111.111.111-11', dob: '10/10/1985', records: [{ date: '2025-06-20', notes: 'Consulta de rotina. Sem queixas. PA: 120/80.' }] },
+        { id: 2, name: 'Jonas Filho', cpf: '222.222.222-22', dob: '05/03/1992', records: [{ date: '2025-06-15', notes: 'Queixa de dor de garganta. Prescrito antibiótico.' }] },
     ];
 
     const handleSearch = () => {
