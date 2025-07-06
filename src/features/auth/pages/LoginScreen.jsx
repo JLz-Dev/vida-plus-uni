@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, InputField } from "../../../components/common"
+import { LGPDNotice } from "./PrivacyNotice"
 export function LoginScreen({ onLogin, onNavigate }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -23,7 +24,7 @@ export function LoginScreen({ onLogin, onNavigate }) {
     return (
         <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
             <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
-                <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Login Vida Plus </h2>
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">Login VidaPlus </h2>
                 <form onSubmit={handleLogin}>
                     {error && <p className="text-red-600 text-center mb-4" role="alert">{error}</p>}
                     <InputField
@@ -54,6 +55,7 @@ export function LoginScreen({ onLogin, onNavigate }) {
                         </Button>
                     </div>
                 </form>
+                <LGPDNotice />
             </div>
         </div>
     );

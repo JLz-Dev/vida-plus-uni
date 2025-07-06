@@ -41,7 +41,7 @@ export function ProfessionalScheduleScreen() {
                 <Button onClick={handleMarkIndisponibility}>Marcar Indisponibilidade</Button>
             </div>
 
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">Agendamentos para {new Date(selectedDate).toLocaleDateString('pt-BR')}</h3>
+            <h3 className="text-xl font-semibold mb-4 text-gray-800">Agendamentos para {selectedDate}</h3>
             {filteredAppointments.length > 0 ? (
                 <div className="overflow-x-auto">
                     <table className="min-w-full divide-y divide-gray-200">
